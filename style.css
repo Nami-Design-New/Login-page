@@ -17,6 +17,8 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .animation {
   width: 50%;
@@ -50,6 +52,7 @@ form h1 {
 }
 form p {
   font-size: 14px;
+  text-align: center;
   color: #000;
 }
 .form-group {
@@ -85,4 +88,17 @@ form button {
   color: #fff;
   font-size: 18px;
   background: #4931a8;
+}
+@media (max-width: 768px) {
+  .animation {
+    display: none;
+  }
+  form {
+    width: 80%;
+  }
+}
+@media (max-width: 576px) {
+  form {
+    width: 100%;
+  }
 }
