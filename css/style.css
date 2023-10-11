@@ -71,7 +71,7 @@ form {
   align-items: center;
 }
 .form-wrap {
-  width: min(100% - 48px, 500px);
+  width: min(100% - 48px, 450px);
 }
 form h1 {
   font-weight: 600;
@@ -87,8 +87,8 @@ form p {
 }
 .form-group {
   width: 100%;
-  margin-top: 48px;
-  gap: 32px;
+  margin-top: 32px;
+  gap: 24px;
   display: flex;
   flex-direction: column;
 }
@@ -104,6 +104,49 @@ form p {
   border-radius: 6px;
   border: 1px solid #bababa;
 }
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.check a{
+  color: #4931a8;
+  text-decoration: none;
+}
+.check div{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.check input {
+  width: 16px;
+  height: 16px;
+  appearance: none;
+  position: relative;
+}
+.check input::after {
+  width: 16px;
+  height: 16px;
+  content: '';
+  border: 1px solid #bababa;
+  border-radius: 4px;
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Font Awesome 6 pro";
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  justify-content: center;
+}
+.check input:checked:after {
+  content: '\f00c';
+  background: #4931a8;
+  color: #fff;
+  border: 0;
+}
 .form-group .input-field label {
   font-size: 14px;
   color: #000;
@@ -115,7 +158,7 @@ form p {
   height: 14px;
 }
 form button {
-  margin-top: 48px;
+  margin-top: 32px;
   width: 100%;
   height: 60px;
   border-radius: 6px;
@@ -144,9 +187,9 @@ form button {
     padding: 32px 24px;
     background-color: #f3f3f960;
     -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(6px);
     border-radius: 24px;
-    border: 1px solid #e1e1e1;
+    border: 2px solid #fff;
   }
 }
 .footer {
