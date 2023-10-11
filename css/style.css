@@ -24,7 +24,7 @@
   display: flex;
 }
 .animation {
-  flex: 1;
+  flex: 4;
   background-image: linear-gradient(
     to right top,
     #ffd8d8,
@@ -60,7 +60,7 @@
 }
 
 .side {
-  flex: 1;
+  flex: 3;
   position: relative;
   border-radius: 24px;
   background: #fff;
@@ -74,7 +74,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: min(100% - 48px, 450px);
+  width: min(100% - 40px, 450px);
 }
 .form-wrap {
   width: 100%;
